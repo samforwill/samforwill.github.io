@@ -23,7 +23,7 @@ subtitle                 : "A collection of various projects, visualizations, an
 name                     : "Sam Forrest Williams"
 description              : "Creator of data-driven strategies to tackle complex challenges—transforming big data into actionable insights, optimized workflows, and informed decisions. 
                           Tier 4 (High-Risk, Public Trust) Federal Clearance Active"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "samforwill.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
