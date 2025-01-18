@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Building a Party Support Model"
-permalink: /projects/party-support-model/
+permalink: /projects/project-1/
 ---
 
 # Building a Party Support Model
