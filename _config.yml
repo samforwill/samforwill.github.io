@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "plum" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -311,10 +311,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: #true
-      comments: #true  # Enable comments if needed
+      read_time: false
+      comments: false  # Enable comments if needed
       share: true     # Enable social sharing buttons
-      related: #true   # Show related posts
+      related: false   # Show related posts
 
   # For all pages in the "_pages" folder
   - scope:
