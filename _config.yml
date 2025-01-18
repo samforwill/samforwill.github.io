@@ -304,27 +304,30 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  # For all posts in the "_posts" folder
   - scope:
-      path: ""
-      type: posts
+      path: "_posts"  # Target the _posts folder
+      type: posts     # Apply to Jekyll "posts"
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
-  # _pages
+      read_time: #true
+      comments: #true  # Enable comments if needed
+      share: true     # Enable social sharing buttons
+      related: #true   # Show related posts
+
+  # For all pages in the "_pages" folder
   - scope:
-      path: ""
-      type: pages
+      path: "_pages"  # Target the _pages folder
+      type: pages     # Apply to Jekyll "pages"
     values:
-      layout: single
-  # _foo
+      layout: page    # Use the "page" layout for general pages
+
+  # For custom content type "foo"
   - scope:
-      path: ""
-      type: foo
+      path: "_foo"    # Target the _foo folder (if it exists)
+      type: foo       # Apply to Jekyll "foo" collection
     values:
-      layout: single
+      layout: single  # Use the "single" layout
+
 
