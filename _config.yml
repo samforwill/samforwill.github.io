@@ -21,8 +21,7 @@ title                    : "Forrest’s Portfolio"
 title_separator          : "-"
 subtitle                 : "A collection of various projects, visualizations, and tools created by me"
 name                     : "Sam Forrest Williams"
-description              : "Creator of data-driven strategies to tackle complex challenges—transforming big data into actionable insights, optimized workflows, and informed decisions. 
-                          Tier 4 (High-Risk, Public Trust) Federal Clearance Active"
+description              : ""
 url                      : "samforwill.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -114,9 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Sam Forrest Williams"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Creator of data-driven strategies to tackle complex challenges—transforming big data into actionable insights, optimized workflows, and informed decisions. 
+                      Tier 4 (High-Risk, Public Trust) Federal Clearance"
   location         : "Somewhere"
   email            :
   links:
