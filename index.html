@@ -1,4 +1,56 @@
----
-layout: home
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Samuel Williams – Data Portfolio</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .project-list {
+      list-style: none;
+      padding: 0;
+    }
+    .project-list li {
+      background: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 480px;
+      border: none;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 Samuel Williams – Data Projects</h1>
+  <p>Interactive visualizations, maps, and dashboards exploring elections, voter behavior, and more.</p>
+
+  <ul class="project-list">
+    <li>
+      <strong>North Carolina Senate Dashboard</strong><br>
+      <a href="nc_senate/index.html">View Project</a>
+    </li>
+    <li>
+      <strong>Unaffiliated Voter Turnout Map</strong><br>
+      <a href="unaffiliated_voters/index.html">View Project</a>
+    </li>
+    <li>
+      <strong>Embedded Tableau: Arizona Dropboxes</strong>
+      <iframe src="https://public.tableau.com/views/arizona_dropboxes/Dashboard1"></iframe>
+    </li>
+  </ul>
+</body>
+</html>
