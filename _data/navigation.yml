@@ -2,16 +2,8 @@ main:
   - title: "Home"
     url: /
   - title: "Projects"
-    url: /projects/
-    sublinks:
-      - title: "NLP Campaign Messaging"
-        url: /projects/nlp-campaign-messaging/
-      - title: "Demographics and Partisan Lean"
-        url: /projects/predict-cd-pvi/
-      - title: "State Leg. Districts PVI"
-        url: /projects/sldu-pvi/
+    url: /#projects
   - title: "About"
     url: /about/
-
   - title: "Contact"
     url: /contact/

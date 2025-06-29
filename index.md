@@ -17,21 +17,29 @@ header:
       url: "/about/"
 excerpt:  
 intro:
-  - excerpt: Forrest Williams is a New York-based data analyst and election specialist who turns complex political and social data into clear, interactive visual stories. He builds dynamic dashboards—from campaign‐messaging scatter plots to district‐level endorsement maps—that make insights easy to explore. When he’s not working with election data, he’s refining Jekyll themes and pushing the boundaries of web-based visualizations to make data both beautiful and accessible.
+  - excerpt: Forrest Williams is a New York-based data analyst and election specialist who turns complex political and social data into clear, interactive visual stories. He builds dynamic dashboards—from campaign‐messaging scatter plots to district‐level endorsement maps—that make insights easy to explore. When he’s not working with election data, he’s out biking the boroughs of NYC.
 
 feature_row:
-  - image_path: /assets/images/placeholder.jpg
-    alt: "Placeholder one"
-    title: "Feature One"
-    excerpt: "This is the first feature."
-  - image_path: /assets/images/placeholder.jpg
-    alt: "Placeholder two"
-    title: "Feature Two"
-    excerpt: "This is the second feature."
-  - image_path: /assets/images/placeholder.jpg
-    alt: "Placeholder three"
-    title: "Feature Three"
-    excerpt: "This is the third feature."
+  - image_path: "/assets/images/Deluzio_For_Congress_Banner.png"
+    alt: "NLP Campaign Messaging"
+    title: "NLP Campaign Messaging"
+    excerpt: "Examining candidate messaging strategies with topic modeling and clustering."
+    url: "https://samforwill.github.io/nlp-campaign-messaging/"
+    btn_label: "View Project"
+
+  - image_path: "/assets/images/Redistricting_Type_Composite.png"
+    alt: "Demographics and Partisan Lean"
+    title: "Demographics & Partisan Lean"
+    excerpt: "Predicting district PVI from demographic data using regression models."
+    url: "https://samforwill.github.io/predict-cd-pvi/"
+    btn_label: "View Project"
+
+  - image_path: "/assets/images/4- Shifted Predicted Composition State Senates.png"
+    alt: "State Legislative Districts PVI"
+    title: "State Leg. Districts PVI"
+    excerpt: "Mapping state‐leg maps and PVI using GeoPandas and interactive visuals."
+    url: "https://samforwill.github.io/sldu-pvi/"
+    btn_label: "View Project"
 
 feature_row2:
   - image_path: /assets/images/placeholder.jpg
@@ -84,7 +92,7 @@ footer_content: |
   text-decoration: underline;
   margin: 2rem 0;
 ">
-  Interactive Plots and Dashboards
+  Recent Posts Dashboards and Projects
 </h2>
 <!-- Dividing Line-->
 <hr style="margin: 1.5rem 0; border: 0; height: 2px; background: #d1d5da;">
@@ -173,6 +181,10 @@ footer_content: |
 
 <!-- 3) Full-width TABLEAU DASHBOARD-->
 <div style="margin-bottom:2rem;">
+    <p style="margin-top: 1rem; text-align:center;">
+    <strong>Precinct–Vote Center Dashboard</strong><br>
+    Tableau Public visualization of vote center aggregation by precinct.
+  </p>
   <div class='tableauPlaceholder' id='viz1750525153359' style='position: relative; width: 100%; height: 700px; overflow: hidden;'>
     <noscript>
       <a href='#'>
@@ -208,12 +220,8 @@ footer_content: |
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
   </script>
-
-  <p style="margin-top: 1rem; text-align:center;">
-    <strong>Precinct–Vote Center Dashboard</strong><br>
-    Tableau Public visualization of vote center aggregation by precinct.
-  </p>
 </div>
 
+## Projects {#projects}
 
 {% include feature_row %}
