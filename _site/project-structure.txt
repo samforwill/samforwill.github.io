@@ -1,0 +1,48 @@
+.
+├── Gemfile
+├── Gemfile.lock
+├── README.md
+├── _config.yml
+├── _data
+│   └── navigation.yml
+├── _pages
+│   └── projects
+│       ├── index.md
+│       ├── nlp-campaign-messaging
+│       │   ├── bokeh
+│       │   ├── images
+│       │   └── index.md
+│       ├── predict-cd-pvi
+│       │   ├── images
+│       │   └── index.md
+│       └── sldu-pvi
+│           ├── images
+│           └── index.md
+├── assets
+│   └── images
+│       ├── avatar.jpg
+│       ├── avatar1.jpg
+│       ├── github_logo.png
+│       ├── placeholder.jpg
+│       ├── splash1.png
+│       ├── splash2.png
+│       ├── splash3.png
+│       └── splash4.png
+├── index.md
+├── plots
+│   ├── interactive
+│   │   ├── candidate_topic_comparisons.html
+│   │   ├── deluzio_topics.html
+│   │   └── mgp_topics.html
+│   └── static
+│       ├── Candidate_Tweet_Percentages.html
+│       ├── MGP_topics.html
+│       ├── candidate_topic_barplot.html
+│       ├── candidate_topic_barplot1.html
+│       ├── deluzio_topics.html
+│       ├── deluzio_topics1.html
+│       ├── mgp_topic_scatter.html
+│       └── mgp_topic_scatter1.html
+└── project-structure.txt
+
+16 directories, 30 files
