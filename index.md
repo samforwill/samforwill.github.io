@@ -4,7 +4,7 @@ about: "my data portfolio"
 layout: single
 permalink: /
 classes: wide
-
+author_profile: true
        
 
  

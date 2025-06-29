@@ -1,54 +1,91 @@
+# Site Settings
 title: "Forrest Williams"
 subtitle: ""
 description: "Data Projects and Visualizations"
-url: "https://samforwill.github.io"  # or your GitHub Pages URL
-baseurl: ""  # leave as "" if you're using samuelwilliams.github.io
+url: "https://samforwill.github.io"
+baseurl: ""
 
-theme: "minimal-mistakes-jekyll"
+# Theme
+remote_theme: "mmistakes/minimal-mistakes"
 
-logo: "/assets/images/github_logo.png"  # Optional, replace with your logo
+# Logo
+logo: "/assets/images/github_logo.png"
 
+# Plugins
 plugins:
   - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gfm
+  - jekyll-feed
 
-
+# Author
 author:
   name: "Forrest Williams"
   avatar: "/assets/images/avatar1.jpg"
   bio: "Data analyst, election nerd, and Jekyll tinkerer."
   location: "New York, NY"
-  email: "you@example.com"       # optional
+  email: "you@example.com"
   links:
     - label: "GitHub"
-      icon: "fab fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/forrestwilliams"
     - label: "LinkedIn"
-      icon: "fab fa-linkedin"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/forrestwilliams"
     - label: "Twitter"
-      icon: "fab fa-twitter"
+      icon: "fab fa-fw fa-twitter"
       url: "https://twitter.com/forrestwilliams"
 
-include:
-  - _pages
-
-# _config.yml
-
+# Build settings
 markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
 kramdown:
   input: GFM
-  parse_block_html: false
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
 defaults:
-  # _pages
+  # _posts
   - scope:
       path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: true
-      share: true
-      related: true
 
-
- 
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
