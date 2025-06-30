@@ -1,12 +1,23 @@
 ---
-title: "Portfolio"
-about: "my data portfolio"     
+title: "Data for Strategy and Impact"
+about: "Data Portfolio and Personal Website"     
 layout: single
 permalink: /
 classes: wide
 author_profile: true
        
-
+sidebar:
+  - title: "Quick Links"
+    text: |
+      - [Resume](/resume/)
+      - [Blog](/blog/)
+      - [Contact](/contact/)
+  - title: "Skills"
+    text: |
+      - Python
+      - R
+      - Data Visualization
+      - Machine Learning
  
 header:
   tagline: "Welcome to My Site"
@@ -17,7 +28,19 @@ header:
       url: "/about/"
 excerpt:  
 intro:
-  - excerpt: Forrest Williams is a New York-based data analyst and election specialist who turns complex political and social data into clear, interactive visual stories. He builds dynamic dashboards—from campaign‐messaging scatter plots to district‐level endorsement maps—that make insights easy to explore. When he’s not working with election data, he’s out biking the boroughs of NYC.
+  # - excerpt: >
+  #     I'm Forrest, a data analyst based in Queens. I was Deputy Data Director for the Arizona Democrats / Harris campaign during the 2024 cycle, and I'm putting this site together to share some of the things I built there, along with newer projects I've been working on since. 
+  #     It's part portfolio, part blog, part catch-all for whatever I'm learning--or rebuilding from scratch. I also just got back from five months in Uruguay and Cuba after the election, so I might use this space to post some of that, too.
+  #     Below are a handful of interactive visualizations. Click into any of them for the full project or post.
+  - excerpt: >
+      Hi, I'm Forrest, a Data Analyst based in Queens, NY.  
+  
+  
+      I started my career in non-profit immigrant advocacy, then after several years with the Census Bureau, my path led me to Arizona where I was Deputy Data Director for the Arizona Democrats/ Harris campaign. I put this site together to show off some of my projects, tools, and skills I've learned along the way.  (And I'll probably post some personal tidbits, like my half year in Uruguay and Cuba following the 2024 cycle.)   
+  
+
+      Scroll down to see some (mostly) interactive snippets of my work. And click through any project to explore the data, code, and process behind it.
+  
 
 feature_row:
   - image_path: "/assets/images/Deluzio_For_Congress_Banner.png"
@@ -26,6 +49,7 @@ feature_row:
     excerpt: "Examining candidate messaging strategies with topic modeling and clustering."
     url: "https://samforwill.github.io/nlp-campaign-messaging/"
     btn_label: "View Project"
+    btn_class: "btn--info"
 
   - image_path: "/assets/images/Redistricting_Type_Composite.png"
     alt: "Demographics and Partisan Lean"
@@ -33,6 +57,7 @@ feature_row:
     excerpt: "Predicting district PVI from demographic data using regression models."
     url: "https://samforwill.github.io/predict-cd-pvi/"
     btn_label: "View Project"
+    btn_class: "btn--info"
 
   - image_path: "/assets/images/4- Shifted Predicted Composition State Senates.png"
     alt: "State Legislative Districts PVI"
@@ -40,20 +65,11 @@ feature_row:
     excerpt: "Mapping state‐leg maps and PVI using GeoPandas and interactive visuals."
     url: "https://samforwill.github.io/sldu-pvi/"
     btn_label: "View Project"
+    btn_class: "btn--info"
 
-feature_row2:
-  - image_path: /assets/images/placeholder.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Left Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-footer_content: |
-  <p>© {{ site.time | date: "%Y" }} Samuel Williams</p>
 ---
 
-<!--STYLE: Pulls the body left so that the author profile doesn't take up so much space-->
+<!--STYLE: Pulls the body left so that author_toc doesn't take up so much space-->
 <!-- also resets the negative margin for mobile-->
 <style>
 .sidebar {
@@ -92,59 +108,15 @@ footer_content: |
   text-decoration: underline;
   margin: 2rem 0;
 ">
-  Recent Posts Dashboards and Projects
+  Recent Posts
 </h2>
-<!-- Dividing Line-->
-<hr style="margin: 1.5rem 0; border: 0; height: 2px; background: #d1d5da;">
 
-<!-- First plot: MGP TOPIC SCATTER PLOT on left, text on right -->
-<div style="display:grid; grid-template-columns:70% 30%; gap:1.5rem; align-items:start;">
-  <!-- Left: iframe -->  
-  <div>
-    <div style="position:relative;padding-bottom:100%;height:0;overflow:hidden;box-shadow: 0 6px 20px rgba(0,0,0,0.25);">
-      <iframe
-        src="/plots/static/mgp_topic_scatter1.html"
-        style="position:absolute;top:6%;left:0;width:100%;height:100%;border:0;"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-  <!-- Right: text --> 
-  <div>
-    <h3>Topic Scatter</h3>
-    <p>Interactive topic-model scatter plot.</p>
-  </div>
-</div>
-
-<!-- Dividing Line-->
-<hr style="margin: 1.5rem 0; border: 0; height: 2px; background: #d1d5da;">
-
-<!-- Second plot: text on left, CANDIDATE COMPARISON BARPLOT on right -->
-<div style="display: grid; grid-template-columns: 30% 70%; gap: 1.5rem; margin-bottom: 2rem;">
-  <!-- Left: text -->
-  <div>
-    <h3>Topic Comparisons</h3>
-    <p>Barplot showing relative topic–tweet frequencies for each candidate.</p>
-  </div>
-  <!-- Right: iframe -->
-  <div style="position:relative; padding-bottom:100%; height:0; overflow:hidden;box-shadow: 0 6px 20px rgba(0,0,0,0.25);">
-    <iframe
-      src="/plots/static/candidate_topic_barplot1.html"
-      style="position:absolute; top:3%; left:3%; width:100%; height:100%; border:0;"
-      allowfullscreen>
-    </iframe>
-  </div>
-</div>
-
-<!-- Dividing Line-->
-<hr style="margin: 1.5rem 0; border: 0; height: 2px; background: #d1d5da;">
-
-<!-- 3) DATAWRAPPER MAP – Plot | Text -->
+<!-- 1) DATAWRAPPER MAP – Plot | Text -->
 <div style="display: grid; grid-template-columns: 35% 65%; gap: 1.5rem; margin-bottom: 2rem;">
   <!-- Left: Datawrapper -->
   <div style="position:relative; max-width:100%; overflow: visible; box-shadow: 0 6px 20px rgba(0,0,0,0.25);">
     <iframe
-      title="NYC Endorsements Map"
+      title="Abundance NY City Council Endorsements Map"
       aria-label="Map"
       id="datawrapper-chart-0xyMH"
       src="https://datawrapper.dwcdn.net/0xyMH/7/"
@@ -171,13 +143,62 @@ footer_content: |
   </div>
   <!-- Right: caption -->
   <div>
-    <h3>NYC Endorsements Map</h3>
-    <p>Interactive Datawrapper map of endorsements across City Council districts.</p>
+    <h3>Abundance NY City Council Endorsements Map</h3>
+    <p>I made this ahead of the NYC primaries to share a fun infograph of councilor endorsements in the races where people may not know the candidates as well. This was mostly an excuse to use Datawrapper, since it is so universally beloved (for good reason!). Also, I'm fully on-board with the Abundance agenda, and have been attending a lot of their meetups since returning to NYC. 
+    This was a quick map to build, but I did have to simplify geometries with GeoPandas and convert the shapefile for use in Datawrapper. The finished map ended up getting a lot of views!
   </div>
 </div>
 
 <!-- Dividing Line-->
 <hr style="margin: 1.5rem 0; border: 0; height: 2px; background: #d1d5da;">
+
+<!-- 2): MGP TOPIC SCATTER PLOT -->
+<h3>Natural Language Processing and Campaign Messaging Strategy</h3>
+
+<div style="display:grid; grid-template-columns:70% 30%; gap:1.5rem; align-items:start;margin-bottom: 1rem;">
+  <!-- Left: iframe -->  
+  <a href="https://samforwill.github.io/nlp-campaign-messaging" style="display: block; text-decoration: none;">
+    <div style="position:relative;padding-bottom:100%;height:0;overflow:hidden;box-shadow: 0 6px 20px rgba(0,0,0,0.25);">
+      <iframe
+        src="/assets/plots/interactive/mgp_topic_scatter1.html"
+        style="position:absolute;top:6%;left:0;width:100%;height:100%;border:0;"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </a>
+  <!-- Right: text --> 
+  <div style="font-size: 0.9em;">
+    <p style="margin-bottom: 2rem; margin-top: 1rem"> I used topic modeling (NMF) to analyze social media posts from <b>Marie Gluesenkamp-Perez (WA-03)</b> and <b>Chris Deluzio (PA-17)</b>, based on their 2022 campaigns</p>
+    
+    <p>This Bokeh scatterplot clusters MGP's tweets by topic to highlight patterns in messaging strategy.</p>
+
+    <p style="margin-bottom: 1.5rem; margin-top: 1.5rem"> Hover over points to read individual tweets in a topic. </p>
+
+  </div>
+</div>
+
+<!-- 3): text on left, CANDIDATE COMPARISON BARPLOT on right -->
+<div style="display: grid; grid-template-columns: 30% 70%; gap: 1.5rem; margin-bottom: 2rem;">
+  <!-- Left: text -->
+  <div style="font-size: 0.9em;">
+    <p style="margin-bottom: 1.5rem; margin-top: 1.5rem">At the end of the project, I compared topic frequencies between the two candidates using a Twitter-trained GloVe model.</p> 
+    <p>This chart (also Bokeh) compares how often each candidate tweeted about key themes to highlight overlaps and differences in their messaging.</p>
+    <a href="https://samforwill.github.io/nlp-campaign-messaging/" class="btn btn--info btn--large">Visit Full Project Page</a>
+  </div>
+  <!-- Right: iframe -->
+  <div style="position:relative; padding-bottom:100%; height:0; overflow:hidden;box-shadow: 0 6px 20px rgba(0,0,0,0.25);">
+    <iframe
+      src="/assets/plots/interactive/candidate_topic_barplot1.html"
+      style="position:absolute; top:3%; left:3%; width:100%; height:100%; border:0;"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<!-- Dividing Line-->
+<hr style="margin: 1.5rem 0; border: 0; height: 2px; background: #d1d5da;">
+
+
 
 <!-- 3) Full-width TABLEAU DASHBOARD-->
 <div style="margin-bottom:2rem;">
@@ -222,6 +243,12 @@ footer_content: |
   </script>
 </div>
 
-## Projects {#projects}
+<h2 style="
+  text-align: center;
+  text-decoration: underline;
+  margin: 2rem 0;
+">
+  Projects
+</h2>
 
 {% include feature_row %}

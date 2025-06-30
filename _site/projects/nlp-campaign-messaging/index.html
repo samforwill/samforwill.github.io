@@ -11,31 +11,27 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Winning in Trump Country - Forrest Williams</title>
-<meta name="description" content="">
+<meta name="description" content="Data Projects and Visualizations">
 
 
   <meta name="author" content="Forrest Williams">
   
-  <meta property="article:author" content="Forrest Williams">
-  
 
 
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Forrest Williams">
 <meta property="og:title" content="Winning in Trump Country">
 <meta property="og:url" content="http://localhost:4000/projects/nlp-campaign-messaging/">
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Data Projects and Visualizations">
 
 
 
 
 
 
-
-  <meta property="article:published_time" content="2025-06-29T15:55:41-04:00">
 
 
 
@@ -170,7 +166,7 @@
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
-        <p>Data analyst, election nerd, and Jekyll tinkerer.</p>
+        <p>Data analyst, election nerd, and bike-lane enthusiast</p>
 
       </div>
     
@@ -205,8 +201,8 @@
 
       
         <li>
-          <a href="mailto:you@example.com" rel="me" class="u-email">
-            <meta itemprop="email" content="you@example.com" />
+          <a href="mailto:samuel.forrest.williams@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="samuel.forrest.williams@gmail.com" />
             <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
           </a>
         </li>
@@ -274,7 +270,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Winning in Trump Country">
-    <meta itemprop="description" content="           ">
+    
     
     
 
@@ -348,7 +344,7 @@ I applied unsupervised topic modeling techniques, beginning with Latent Dirichle
 
       <p>To identify standout candidates, I devised a ‘Performance’ metric by calculating the difference between each district’s Partisan Voter Index (PVI) and the candidate’s electoral margin in 2022. PVI measures how partisan the district is compared to the nation as a whole, based on how the constituents of those districts voted in previous presidential elections. This approach identified those who significantly outperformed their district’s typical partisan lean.</p>
 
-      <p><img src="images/Overperformance.png" alt="Overperformance" /></p>
+      <p><img src="/projects/nlp-campaign-messaging/images/Overperformance.png" alt="Overperformance" /></p>
 
       <p>Of the top 18 overperforming candidates indicated in the graph above by district title, I narrowed my focus to first-time candidates to avoid any influence of incumbency effects. Mary Peltola from Alaska was also excluded due to the state’s use of Ranked Choice Voting, which, while I am personally a fan of RCV, complicates direct comparison of candidates in this context. <br /></p>
 
@@ -418,7 +414,7 @@ It seems like Topic 1 involves canvassing and GOTV messaging with terms like "vo
 
 TF-IDF scores words based on frequency and rarity, then LDA identifies topics based on these scores.  When determining topics, it assigns each word a weight indicating its importance to the topic.  To demonstrate this concept, below is a bar graph showing the importance weights for the words in MGP's first topic.
 
-![MGP LDA](images/mgp_topic1.png)
+![MGP LDA](/projects/nlp-campaign-messaging/images/mgp_topic1.png)
 
 Now, this is all well and good, but it *is* a baseline model, so let's not dive too deep into it and see if we can go ahead and up the ante a bit with more complex modeling.
 
@@ -448,7 +444,7 @@ After some limited pre-processing, each word within the tweets was converted int
 
 Here is the distribution of unlabeled tweet topics that the model found to share semantic similarity (I found 7 topics to be the best grouping parameter).
 
-![MGP Topic Distribution](images/mgp_topic_distribution.png)
+![MGP Topic Distribution](/projects/nlp-campaign-messaging/images/mgp_topic_distribution.png)
 
 Once the tweets were grouped , I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes: 
 
@@ -535,7 +531,7 @@ The interactive graph below shows the top 50 tweets associated with each categor
 
 Here is the distribution of tweet topics for Chris Deluzio that the model found to share semantic similarity.
 
-![Deluzio Topic Distribution](images/deluzio_topic_distribution.png)
+![Deluzio Topic Distribution](/projects/nlp-campaign-messaging/images/deluzio_topic_distribution.png)
 
 Once the tweets were grouped , I went through the top 50 tweets associated with each topic, and found the tweets to be best described by the following themes: 
 
@@ -724,15 +720,6 @@ Marie Gluesenkamp Perez's campaign prioritized ground efforts, with 1 in every 4
       
 
       
-  <nav class="pagination">
-    
-      <a href="/projects/" class="pagination--pager" title="Projects">Previous</a>
-    
-    
-      <a href="/projects/predict-cd-pvi/" class="pagination--pager" title="The New Demographic Battlefield">Next</a>
-    
-  </nav>
-
 
     </div>
 

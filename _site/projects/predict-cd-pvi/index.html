@@ -11,31 +11,27 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>The New Demographic Battlefield - Forrest Williams</title>
-<meta name="description" content="">
+<meta name="description" content="Data Projects and Visualizations">
 
 
   <meta name="author" content="Forrest Williams">
   
-  <meta property="article:author" content="Forrest Williams">
-  
 
 
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Forrest Williams">
 <meta property="og:title" content="The New Demographic Battlefield">
 <meta property="og:url" content="http://localhost:4000/projects/predict-cd-pvi/">
 
 
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Data Projects and Visualizations">
 
 
 
 
 
 
-
-  <meta property="article:published_time" content="2025-06-29T15:55:41-04:00">
 
 
 
@@ -170,7 +166,7 @@
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
-        <p>Data analyst, election nerd, and Jekyll tinkerer.</p>
+        <p>Data analyst, election nerd, and bike-lane enthusiast</p>
 
       </div>
     
@@ -205,8 +201,8 @@
 
       
         <li>
-          <a href="mailto:you@example.com" rel="me" class="u-email">
-            <meta itemprop="email" content="you@example.com" />
+          <a href="mailto:samuel.forrest.williams@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="samuel.forrest.williams@gmail.com" />
             <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
           </a>
         </li>
@@ -274,7 +270,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="The New Demographic Battlefield">
-    <meta itemprop="description" content="        ">
+    
     
     
 
@@ -375,7 +371,7 @@
 
 <p>First, I wanted to get a sense of how the newly shaped districts were distributed according to their partisan-ness. Distributing every district in the US based on PVI-score shows this interesting shape:</p>
 
-<p><a href="images/Distribution_of_PVI_Scores.png" target="_blank" rel="noopener"><img src="images/Distribution_of_PVI_Scores.png" alt="Distribution of PVI Scores" /></a></p>
+<p><a href="images/Distribution_of_PVI_Scores.png" target="_blank" rel="noopener"><img src="/projects/predict-cd-pvi/images/Distribution_of_PVI_Scores.png" alt="Distribution of PVI Scores" /></a></p>
 
 <p>Well, that certainly doesn’t look normal! (in the statistical distribution sense of “normal”, but also in the common sense department). So let’s dive in! <br /></p>
 
@@ -402,7 +398,7 @@
 
 <p>Now, when we look at the same distribution graph color-coded by type of redistricting, I have a feeling we should see something pretty notable in that -10 to -20 range.</p>
 
-<p><a href="images/Redistricting_Type_Composite.png" target="_blank" rel="noopener"><img src="images/Redistricting_Type_Composite.png" alt="Redistricting Type Composite" /></a></p>
+<p><a href="images/Redistricting_Type_Composite.png" target="_blank" rel="noopener"><img src="/projects/predict-cd-pvi/images/Redistricting_Type_Composite.png" alt="Redistricting Type Composite" /></a></p>
 
 <p align="center">
   <img src="images/surprise.gif" alt="surprise" />
@@ -410,7 +406,7 @@
 
 <h5 id="its-a-little-hard-to-focus-with-all-those-colors-going-on-in-the-same-graph-so-lets-break-it-down-into-its-component-parts">It’s a little hard to focus with all those colors going on in the same graph, so let’s break it down into its component parts:</h5>
 
-<p><a href="images/FacetGrid_PVI.png" target="_blank" rel="noopener"><img src="images/FacetGrid_PVI.png" alt="Facet Grid" /></a></p>
+<p><a href="images/FacetGrid_PVI.png" target="_blank" rel="noopener"><img src="/projects/predict-cd-pvi/images/FacetGrid_PVI.png" alt="Facet Grid" /></a></p>
 
 <h3 id="observations">Observations:</h3>
 <p><strong>Courts &amp; Commissions</strong>: As far as distribution goes, courts and commissions have the most natural spread, which makes sense given their priority to create fair districts. The median of the commissions is between 6-8, but this also makes sense given that states with commissions tend to be more democratic overall (CA, CO, MI, AZ, HI, ID, MO, NJ, WA)<br /></p>
@@ -428,9 +424,9 @@
 <p>Because I only eliminated in the data wrangling/cleaning process those features that were <em>exactly</em> duplicated within and between data profiles, I wanted to get a sense of the extent of multicollinearity of my features and chose to do that through heatmapping.<br /></p>
 
 <p>Since my data also has high dimensionality (450 unique features), I will only share here one of my heatmaps corresponding to the demographic profile highlighting highly correlated features. 
-<img src="images/demo_heatmap_hc.png" alt="Demo Heatmap" />
+<img src="/projects/predict-cd-pvi/images/demo_heatmap_hc.png" alt="Demo Heatmap" />
 Here it’s easy to see many of the features are highly correlated, and many of those relationships make sense intuitively. So let’s look at only the top 50 highly correlated pairs of features in the graph below (open in new window, Census Bureau characteristic titles can be very long):
-<img src="images/top_50_correlations.png" alt="Top50 Correlations" /></p>
+<img src="/projects/predict-cd-pvi/images/top_50_correlations.png" alt="Top50 Correlations" /></p>
 
 <p>Some of the features have an almost exact negative correlation, such as “Place of Birth - Foreign Born” and “Place of Birth - Native Born”, but there are also some highly correlated pairs that don’t exactly hit perfect correlation such as “Total Population” and “Total Population 1 year and over”.</p>
 
@@ -462,7 +458,7 @@ Here it’s easy to see many of the features are highly correlated, and many of 
 <ol>
   <li><strong>Modeling on PVI</strong>: <br />
 After several rounds of parameter tuning on all of the above models, I sorted on highest performance R²-Score on the test set. In all instances, the top 5 performing models were Ridge Regression, signaling its efficacy in managing multicollinearity within the high dimensional demographic feature set.<br />
-<img src="images/PVI_models.png" alt="PVI Models" /></li>
+<img src="/projects/predict-cd-pvi/images/PVI_models.png" alt="PVI Models" /></li>
 </ol>
 
 <p>Specifically, Ridge with MinMax Scaling and L2-regularization alpha of 1 performed best. <br /></p>
@@ -474,7 +470,7 @@ After several rounds of parameter tuning on all of the above models, I sorted on
 <ol>
   <li><strong>Modeling on 2022 Midterm Margins</strong>: <br />
 Using the same process and models as in the PVI modeling, after several iterations of parameter tuning, my highest performing models were:<br />
-<img src="images/22_Models.png" alt="22 Models" /> <br /></li>
+<img src="/projects/predict-cd-pvi/images/22_Models.png" alt="22 Models" /> <br /></li>
 </ol>
 
 <p>Although ElasticNet with MinMax Scaler had the highest R²-Score on the test set, I chose to use the Lasso with MinMax scaler alpha 0.1 as my best model based on the other metrics. <br /></p>
@@ -503,11 +499,11 @@ Using the same process and models as in the PVI modeling, after several iteratio
 
 <h4 id="top-democratic-features-for-predicting-pvi">Top Democratic Features for Predicting PVI</h4>
 
-<p><a href="images/Dem_Features_PVI.png" target="_blank" rel="noopener"><img src="images/Dem_Features_PVI.png" alt="Dem Features PVI" /></a></p>
+<p><a href="images/Dem_Features_PVI.png" target="_blank" rel="noopener"><img src="/projects/predict-cd-pvi/images/Dem_Features_PVI.png" alt="Dem Features PVI" /></a></p>
 
 <h4 id="top-republican-features-for-predicting-pvi">Top Republican Features for Predicting PVI</h4>
 
-<p><a href="images/Rep_Features_PVI.png" target="_blank" rel="noopener"><img src="images/Rep_Features_PVI.png" alt="Rep Features PVI" /></a></p>
+<p><a href="images/Rep_Features_PVI.png" target="_blank" rel="noopener"><img src="/projects/predict-cd-pvi/images/Rep_Features_PVI.png" alt="Rep Features PVI" /></a></p>
 
 <h4 id="notes-on-pvi-features">Notes on PVI Features</h4>
 
@@ -529,11 +525,11 @@ The #1 indicator of previous Republican presidential voting behavior was “Race
 
 <h3 id="top-2022-midterm-democratic-features">Top 2022 Midterm Democratic Features</h3>
 <p><strong>Most Influential Democratic Features for Predicting 2022 Midterm Voting Behavior</strong><br />
-<a href="images/Dem_Features_22.png" target="_blank" rel="noopener"><img src="images/Dem_Features_22.png" alt="Dem Features 22" /></a></p>
+<a href="images/Dem_Features_22.png" target="_blank" rel="noopener"><img src="/projects/predict-cd-pvi/images/Dem_Features_22.png" alt="Dem Features 22" /></a></p>
 
 <h3 id="top-2022-midterm-republican-features">Top 2022 Midterm Republican Features</h3>
 <p><strong>Most Influential Republican Features for Predicting 2022 Midterm Voting Behavior</strong><br />
-<a href="images/Rep_Features_22.png" target="_blank" rel="noopener"><img src="images/Rep_Features_22.png" alt="Rep Features 22" /></a></p>
+<a href="images/Rep_Features_22.png" target="_blank" rel="noopener"><img src="/projects/predict-cd-pvi/images/Rep_Features_22.png" alt="Rep Features 22" /></a></p>
 
 <h3 id="notes-on-2022-midterm-features-">Notes on 2022 Midterm Features <br /></h3>
 
@@ -588,15 +584,6 @@ The #1 indicator of previous Republican presidential voting behavior was “Race
       
 
       
-  <nav class="pagination">
-    
-      <a href="/projects/nlp-campaign-messaging/" class="pagination--pager" title="Winning in Trump Country">Previous</a>
-    
-    
-      <a href="/projects/sldu-pvi/" class="pagination--pager" title="Mapping State Legislative District Competitiveness with PVI">Next</a>
-    
-  </nav>
-
 
     </div>
 
