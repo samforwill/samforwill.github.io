@@ -114,7 +114,7 @@ feature_row:
 <!-- 1) DATAWRAPPER MAP – Plot | Text -->
 <div style="display: grid; grid-template-columns: 35% 65%; gap: 1.5rem; margin-bottom: 2rem;">
   <!-- Left: Datawrapper -->
-  <div style="position:relative; max-width:100%; overflow: visible; box-shadow: 0 6px 20px rgba(0,0,0,0.25);">
+  <div style="position:relative; max-width:100%; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.25); max-height: 780px;">
     <iframe
       title="Abundance NY City Council Endorsements Map"
       aria-label="Map"

@@ -1,7 +1,7 @@
 var store = [{
-        "title": "Abundance Endorsements",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "/2025/06/27/abundance-endorsements.html",
+        "title": "Abundance NY City Council Endorsements",
+        "excerpt":" ","categories": ["blog","maps","interactive"],
+        "tags": ["python","geopandas","datawrapper"],
+        "url": "/blog/maps/interactive/2025/06/30/abundance-endorsements.html",
         "teaser": null
       }]
