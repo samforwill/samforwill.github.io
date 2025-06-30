@@ -144,8 +144,12 @@ feature_row:
   <!-- Right: caption -->
   <div>
     <h3>Abundance NY City Council Endorsements Map</h3>
-    <p>I made this ahead of the NYC primaries to share a fun infograph of councilor endorsements in the races where people may not know the candidates as well. This was mostly an excuse to use Datawrapper, since it is so universally beloved (for good reason!). Also, I'm fully on-board with the Abundance agenda, and have been attending a lot of their meetups since returning to NYC. 
-    This was a quick map to build, but I did have to simplify geometries with GeoPandas and convert the shapefile for use in Datawrapper. The finished map ended up getting a lot of views!
+    <p>I made this ahead of the NYC primaries to share a fun infograph of councilor endorsements, especially for down-ballot races where people may not know the candidates as well. This was mostly an excuse to use Datawrapper, since it is so universally beloved (for good reason!). Also, I'm fully on-board with the Abundance agenda, and have been attending a lot of Abundance NY meetups since returning to NYC.</p> 
+    
+    <p>This was a quick map to build, but I did have to simplify geometries with GeoPandas and convert the shapefile for use in Datawrapper. It also got a lot of views!</p>
+
+    <p> Click through to see the full process. </p>
+    <a href="" class="btn btn--info btn--large">Visit Full Post</a>
   </div>
 </div>
 
