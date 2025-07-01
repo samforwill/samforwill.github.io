@@ -7,11 +7,6 @@ classes: wide
 author_profile: true
        
 sidebar:
-  - title: "Quick Links"
-    text: |
-      - [Resume](/resume/)
-      - [Blog](/blog/)
-      - [Contact](/contact/)
   - title: "Skills"
     text: |
       - Python
@@ -28,15 +23,11 @@ header:
       url: "/about/"
 excerpt:  
 intro:
-  # - excerpt: >
-  #     I'm Forrest, a data analyst based in Queens. I was Deputy Data Director for the Arizona Democrats / Harris campaign during the 2024 cycle, and I'm putting this site together to share some of the things I built there, along with newer projects I've been working on since. 
-  #     It's part portfolio, part blog, part catch-all for whatever I'm learning--or rebuilding from scratch. I also just got back from five months in Uruguay and Cuba after the election, so I might use this space to post some of that, too.
-  #     Below are a handful of interactive visualizations. Click into any of them for the full project or post.
   - excerpt: >
       Hi, I'm Forrest, a Data Analyst based in Queens, NY.  
   
   
-      I started my career in non-profit immigrant advocacy, then after several years with the Census Bureau, my path led me to Arizona where I was Deputy Data Director for the Arizona Democrats/ Harris campaign. I put this site together to show off some of my projects, tools, and skills I've learned along the way.  (And I'll probably post some personal tidbits, like my half year in Uruguay and Cuba following the 2024 cycle.)   
+      I started my career in non-profit immigrant advocacy, then after several years with the Census Bureau, my path led me to Arizona where I was Deputy Data Director for the AZ Democrats/Harris for President campaign. I put this site together to show off some of my projects, tools, and skills I've learned along the way.  (And I'll probably post some personal tidbits, like my half year in Uruguay and Cuba following the 2024 cycle.)   
   
 
       Scroll down to see some (mostly) interactive snippets of my work. And click through any project to explore the data, code, and process behind it.
@@ -101,15 +92,13 @@ feature_row:
 </style>
 
 {% include feature_row id="intro" type="" %}
-
-
-<h2 style="
+<h1 style="
   text-align: center;
   text-decoration: underline;
-  margin: 2rem 0;
+  margin: 0rem 1;
 ">
   Recent Posts
-</h2>
+</h1>
 
 <!-- 1) DATAWRAPPER MAP – Plot | Text -->
 <div style="display: grid; grid-template-columns: 35% 65%; gap: 1.5rem; margin-bottom: 2rem;">
@@ -149,7 +138,7 @@ feature_row:
     <p>This was a quick map to build, but I did have to simplify geometries with GeoPandas and convert the shapefile for use in Datawrapper. It also got a lot of views!</p>
 
     <p> Click through to see the full process. </p>
-    <a href="" class="btn btn--info btn--large">Visit Full Post</a>
+    <a href="/maps/2025/06/30/abundance-endorsements/" class="btn btn--info btn--large">Visit Full Post</a>
   </div>
 </div>
 
@@ -172,11 +161,11 @@ feature_row:
   </a>
   <!-- Right: text --> 
   <div style="font-size: 0.9em;">
-    <p style="margin-bottom: 2rem; margin-top: 1rem"> I used topic modeling (NMF) to analyze social media posts from <b>Marie Gluesenkamp-Perez (WA-03)</b> and <b>Chris Deluzio (PA-17)</b>, based on their 2022 campaigns</p>
+    <p style="margin-bottom: 2rem; margin-top: 1rem"> I used topic modeling (NMF) to analyze social media posts from <b>Marie Gluesenkamp-Perez (WA-03)</b> and <b>Chris Deluzio (PA-17)</b>, based on their 2022 campaigns.</p>
     
     <p>This Bokeh scatterplot clusters MGP's tweets by topic to highlight patterns in messaging strategy.</p>
 
-    <p style="margin-bottom: 1.5rem; margin-top: 1.5rem"> Hover over points to read individual tweets in a topic. </p>
+    <p style="margin-bottom: 1.5rem; margin-top: 1.5rem"> Hover over points to read individual tweets within each topic. </p>
 
   </div>
 </div>
@@ -247,12 +236,12 @@ feature_row:
   </script>
 </div>
 
-<h2 style="
+<h1 style="
   text-align: center;
   text-decoration: underline;
   margin: 2rem 0;
 ">
   Projects
-</h2>
+</h1>
 
 {% include feature_row %}
