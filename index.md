@@ -236,12 +236,6 @@ feature_row:
   </script>
 </div>
 
-<h1 style="
-  text-align: center;
-  text-decoration: underline;
-  margin: 2rem 0;
-">
-  Projects
-</h1>
+
 
 

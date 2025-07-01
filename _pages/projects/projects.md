@@ -4,10 +4,7 @@ permalink: /projects/
 layout: single
 author_profile: true
 classes: wide
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  excerpt: "A collection of data science and political analysis projects"
+
 
 intro: 
   - excerpt: "These projects showcase my work in political data analysis, natural language processing, and predictive modeling. Each project represents a deep dive into different aspects of electoral politics and demographic analysis."
