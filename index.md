@@ -244,4 +244,4 @@ feature_row:
   Projects
 </h1>
 
-{% include feature_row %}
+
