@@ -138,7 +138,7 @@ feature_row:
     <p>This was a quick map to build, but I did have to simplify geometries with GeoPandas and convert the shapefile for use in Datawrapper. It also got a lot of views!</p>
 
     <p> Click through to see the full process. </p>
-    <a href="/maps/2025/06/30/abundance-endorsements/" class="btn btn--info btn--large">Visit Full Post</a>
+    <a href="https://samforwill.github.io/maps/2025/06/30/abundance-endorsements.html" class="btn btn--info btn--large">Visit Full Post</a>
   </div>
 </div>
 
