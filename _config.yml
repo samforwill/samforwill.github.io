@@ -35,7 +35,7 @@ author:
       url: "https://linkedin.com/in/samforwill"
     - label: "Resume"
       icon: "fas fa-fw fa-file-pdf"
-      url: #resume
+      url: "/assets/Resume - Forrest Williams.pdf"
 
 
 # Build settings

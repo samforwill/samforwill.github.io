@@ -9,10 +9,14 @@ author_profile: true
 sidebar:
   - title: "Skills"
     text: |
-      - Python
-      - R
-      - Data Visualization
-      - Machine Learning
+      **Python:** pandas, numpy, requests, web scraping, data analysis  
+      **SQL:**  dbt, ETL/ELT, BigQuery  
+      **Dashboards:** Hex, Looker Studio, Tableau, Streamlit  
+      **Visualization:** matplotlib, seaborn, Plotly, Bokeh, Datawrapper  
+      **Machine Learning:** scikit-learn (regression, classification)  
+      **Geospatial:** GeoPandas, QGIS  
+      **Campaign Data:** NGPVAN, Mobilize, Civis, Parsons  
+      **Collaboration:** Git, Asana, Google Workspace, Jupyter
  
 header:
   tagline: "Welcome to My Site"
@@ -64,7 +68,7 @@ feature_row:
 <!-- also resets the negative margin for mobile-->
 <style>
 .sidebar {
-  width: 200px !important;
+  width: 230px !important;
 }
 .page__content {
   margin-left: -50px !important;
@@ -133,7 +137,7 @@ feature_row:
   <!-- Right: caption -->
   <div>
     <h3>Abundance NY City Council Endorsements Map</h3>
-    <p>I made this ahead of the NYC primaries to share a fun infograph of councilor endorsements, especially for down-ballot races where people may not know the candidates as well. This was mostly an excuse to use Datawrapper, since it is so universally beloved (for good reason!). Also, I'm fully on-board with the Abundance agenda, and have been attending a lot of Abundance NY meetups since returning to NYC.</p> 
+    <p>I made this for Abundance NY ahead of the NYC primaries to share a fun infograph of councilor endorsements, especially for down-ballot races where people may not know the candidates as well. This was mostly an excuse to use Datawrapper, since it is so universally beloved (for good reason!). </p> 
     
     <p>This was a quick map to build, but I did have to simplify geometries with GeoPandas and convert the shapefile for use in Datawrapper. It also got a lot of views!</p>
 

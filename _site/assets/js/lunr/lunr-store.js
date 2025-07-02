@@ -1,4 +1,10 @@
 var store = [{
+        "title": "About",
+        "excerpt":"Download Resume (PDF) Forrest Williams Strategic Campaign Operations Creator of data-driven strategies to tackle complex challenges. Building tools that strengthen outreach, clarify messaging, and improve how campaigns connect with supporters. Experience Deputy Data Director Harris for President - Coordinated Campaign | Phoenix, AZ | May 2024 - November 2024 Analytics:...","categories": [],
+        "tags": [],
+        "url": "/about/",
+        "teaser": null
+      },{
         "title": "Projects",
         "excerpt":"These projects showcase some of my deeper dives into demographics and voter behavior, natural language processing, and predictive modeling. Demographics &amp; Partisan Lean Predicting district PVI from demographic data using regression models to understand the relationship between community composition and voting patterns. View Project NLP Campaign Messaging Examining candidate messaging...","categories": [],
         "tags": [],
