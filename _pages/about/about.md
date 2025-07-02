@@ -12,6 +12,12 @@ classes: wide
   </a>
 </div>
 
+<div style="text-align: center; margin-bottom: 2em;">
+  <a href="/assets/resume kyles style.pdf" class="btn btn--primary btn--large" target="_blank">
+    <i class="fas fa-download"></i> In Kyle's Resume Style
+  </a>
+</div>
+
 # Forrest Williams
 **Strategic Campaign Operations**
 

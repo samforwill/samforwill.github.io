@@ -1,6 +1,6 @@
 var store = [{
         "title": "About",
-        "excerpt":"Download Resume (PDF) Forrest Williams Strategic Campaign Operations Creator of data-driven strategies to tackle complex challenges. Building tools that strengthen outreach, clarify messaging, and improve how campaigns connect with supporters. Experience Deputy Data Director Harris for President - Coordinated Campaign | Phoenix, AZ | May 2024 - November 2024 Analytics:...","categories": [],
+        "excerpt":"Download Resume (PDF) In Kyle's Resume Style Forrest Williams Strategic Campaign Operations Creator of data-driven strategies to tackle complex challenges. Building tools that strengthen outreach, clarify messaging, and improve how campaigns connect with supporters. Experience Deputy Data Director Harris for President - Coordinated Campaign | Phoenix, AZ | May 2024...","categories": [],
         "tags": [],
         "url": "/about/",
         "teaser": null
