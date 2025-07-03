@@ -6,17 +6,17 @@ permalink: /
 classes: wide
 author_profile: true
        
-# sidebar:
-#   - title: "Skills"
-#     text: |
-#       **Python:** pandas, numpy, requests, web scraping, data analysis  
-#       **SQL:**  dbt, ETL/ELT, BigQuery  
-#       **Dashboards:** Hex, Looker Studio, Tableau, Streamlit  
-#       **Visualization:** matplotlib, seaborn, Plotly, Bokeh, Datawrapper  
-#       **Machine Learning:** scikit-learn (regression, classification)  
-#       **Geospatial:** GeoPandas, QGIS  
-#       **Campaign Data:** NGPVAN, Mobilize, Civis, Parsons  
-#       **Collaboration:** Git, Asana, Google Workspace, Jupyter
+sidebar:
+  - title: "Skills"
+    text: |
+      **Python:** pandas, numpy, requests, web scraping, data analysis  
+      **SQL:**  dbt, ETL/ELT, BigQuery  
+      **Dashboards:** Hex, Looker Studio, Tableau, Streamlit  
+      **Visualization:** matplotlib, seaborn, Plotly, Bokeh, Datawrapper  
+      **Machine Learning:** scikit-learn (regression, classification)  
+      **Geospatial:** GeoPandas, QGIS  
+      **Campaign Data:** NGPVAN, Mobilize, Civis, Parsons  
+      **Collaboration:** Git, Asana, Google Workspace, Jupyter
  
 header:
   tagline: "Welcome to My Site"
