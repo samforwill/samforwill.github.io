@@ -6,17 +6,17 @@ permalink: /
 classes: wide
 author_profile: true
        
-sidebar:
-  - title: "Skills"
-    text: |
-      **Python:** pandas, numpy, requests, web scraping, data analysis  
-      **SQL:**  dbt, ETL/ELT, BigQuery  
-      **Dashboards:** Hex, Looker Studio, Tableau, Streamlit  
-      **Visualization:** matplotlib, seaborn, Plotly, Bokeh, Datawrapper  
-      **Machine Learning:** scikit-learn (regression, classification)  
-      **Geospatial:** GeoPandas, QGIS  
-      **Campaign Data:** NGPVAN, Mobilize, Civis, Parsons  
-      **Collaboration:** Git, Asana, Google Workspace, Jupyter
+# sidebar:
+#   - title: "Skills"
+#     text: |
+#       **Python:** pandas, numpy, requests, web scraping, data analysis  
+#       **SQL:**  dbt, ETL/ELT, BigQuery  
+#       **Dashboards:** Hex, Looker Studio, Tableau, Streamlit  
+#       **Visualization:** matplotlib, seaborn, Plotly, Bokeh, Datawrapper  
+#       **Machine Learning:** scikit-learn (regression, classification)  
+#       **Geospatial:** GeoPandas, QGIS  
+#       **Campaign Data:** NGPVAN, Mobilize, Civis, Parsons  
+#       **Collaboration:** Git, Asana, Google Workspace, Jupyter
  
 header:
   tagline: "Welcome to My Site"
@@ -142,7 +142,7 @@ feature_row:
     <p>This was a quick map to build, but I did have to simplify geometries with GeoPandas and convert the shapefile for use in Datawrapper. It also got a lot of views!</p>
 
     <p> Click through to see the full process. </p>
-    <a href="https://samforwill.github.io/maps/2025/06/30/abundance-endorsements.html" class="btn btn--info btn--large">Visit Full Post</a>
+    <a href="https://samforwill.github.io/maps/2025/06/27/abundance-endorsements.html" class="btn btn--info btn--large">Visit Full Post</a>
   </div>
 </div>
 
@@ -200,10 +200,18 @@ feature_row:
 <!-- 3) Full-width TABLEAU DASHBOARD-->
 <div style="margin-bottom:2rem;">
     <p style="margin-top: 1rem; text-align:center;">
-    <strong>Precinct–Vote Center Dashboard</strong><br>
-    Tableau Public visualization of vote center aggregation by precinct.
-  </p>
-  <div class='tableauPlaceholder' id='viz1750525153359' style='position: relative; width: 100%; height: 700px; overflow: hidden;'>
+    <strong>Maricopa Precinct v Closest Votecenter Dashboard</strong><br>
+    </p>
+    <p style="text-align:left;">
+    This interactive dashboard plots each voter against the nearest of 256 vote centers, exposing how precinct‐level aggregation misallocates resources in an open votecenter system. It supported the Voter Protection team in directing limited volunteer and legal resources to the centers where they were needed most in 2024 General Election.<br><br>
+
+    Click through to learn more about the process and purpose of making this dashboard.
+    </p>
+  <div style="text-align: center;">
+  <a href="https://samforwill.github.io/dashboards/2025/06/30/votecenter-voronoi.html" class="btn btn--info btn--large">Visit Full Post</a>
+  </div>
+  
+  <div class='tableauPlaceholder' id='viz1750525153359' style='position: relative; width: 100%; height: 700px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.25);'>
     <noscript>
       <a href='#'>
         <img alt='Dashboard 1' src='https://public.tableau.com/static/images/Ma/MaricopaCountyPrecinctv_VoteCenterAggregation/Dashboard1_rss.png' style='border: none; width:100%;' />

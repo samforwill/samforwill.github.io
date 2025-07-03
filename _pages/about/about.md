@@ -4,6 +4,18 @@ permalink: /about/
 layout: single
 author_profile: true
 classes: wide
+
+sidebar:
+  - title: "Skills"
+    text: |
+      **Python:** pandas, numpy, requests, web scraping, data analysis  
+      **SQL:**  dbt, ETL/ELT, BigQuery  
+      **Dashboards:** Hex, Looker Studio, Tableau, Streamlit  
+      **Visualization:** matplotlib, seaborn, Plotly, Bokeh, Datawrapper  
+      **Machine Learning:** scikit-learn (regression, classification)  
+      **Geospatial:** GeoPandas, QGIS  
+      **Campaign Data:** NGPVAN, Mobilize, Civis, Parsons  
+      **Collaboration:** Git, Asana, Google Workspace, Jupyter
 ---
 
 <div style="text-align: center; margin-bottom: 2em;">
@@ -12,11 +24,6 @@ classes: wide
   </a>
 </div>
 
-<div style="text-align: center; margin-bottom: 2em;">
-  <a href="/assets/resume kyles style.pdf" class="btn btn--primary btn--large" target="_blank">
-    <i class="fas fa-download"></i> In Kyle's Resume Style
-  </a>
-</div>
 
 # Forrest Williams
 **Strategic Campaign Operations**

@@ -1,4 +1,178 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-02T13:52:50-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Forrest Williams</title><subtitle>Data Projects and Visualizations</subtitle><author><name>Forrest Williams</name><email>samuel.forrest.williams@gmail.com</email></author><entry><title type="html">Abundance NY City Council Endorsements</title><link href="http://localhost:4000/maps/2025/06/30/abundance-endorsements.html" rel="alternate" type="text/html" title="Abundance NY City Council Endorsements" /><published>2025-06-30T00:00:00-04:00</published><updated>2025-06-30T00:00:00-04:00</updated><id>http://localhost:4000/maps/2025/06/30/abundance-endorsements</id><content type="html" xml:base="http://localhost:4000/maps/2025/06/30/abundance-endorsements.html"><![CDATA[<style>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-03T17:24:22-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Forrest Williams</title><subtitle>Data Projects and Visualizations</subtitle><author><name>Forrest Williams</name><email>samuel.forrest.williams@gmail.com</email></author><entry><title type="html">Voronoi-Based Voter Assignment</title><link href="http://localhost:4000/dashboards/2025/06/30/votecenter-voronoi.html" rel="alternate" type="text/html" title="Voronoi-Based Voter Assignment" /><published>2025-06-30T00:00:00-04:00</published><updated>2025-06-30T00:00:00-04:00</updated><id>http://localhost:4000/dashboards/2025/06/30/votecenter-voronoi</id><content type="html" xml:base="http://localhost:4000/dashboards/2025/06/30/votecenter-voronoi.html"><![CDATA[<style>
+.page__content {
+  font-size: 0.8rem;
+}
+</style>
+
+<h2 id="better-voter-protection-prioritization-maricopa-example">Better Voter Protection Prioritization (Maricopa Example)</h2>
+<p><em>Around 60% of Arizonans (2 million voters) live in Maricopa County, which was served by 256 Vote Centers in the 2024 Election.</em></p>
+
+<div class="tableauPlaceholder" id="viz1750525153359" style="position: relative; width: 100%; height: 700px; overflow: hidden; border: 2px solid #ccc; border-radius: 4px;">
+    <noscript>
+      <a href="#">
+        <img alt="Dashboard 1" src="https://public.tableau.com/static/images/Ma/MaricopaCountyPrecinctv_VoteCenterAggregation/Dashboard1_rss.png" style="border: none; width:100%;" />
+      </a>
+    </noscript>
+    <object class="tableauViz" style="display:none; width:100%; height:700px; overflow: hidden;">
+      <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+      <param name="embed_code_version" value="3" />
+      <param name="site_root" value="" />
+      <param name="name" value="MaricopaCountyPrecinctv_VoteCenterAggregation/Dashboard1" />
+      <param name="tabs" value="no" />
+      <param name="toolbar" value="yes" />
+      <param name="static_image" value="https://public.tableau.com/static/images/Ma/MaricopaCountyPrecinctv_VoteCenterAggregation/Dashboard1/1.png" />
+      <param name="animate_transition" value="yes" />
+      <param name="display_static_image" value="yes" />
+      <param name="display_spinner" value="yes" />
+      <param name="display_overlay" value="yes" />
+      <param name="display_count" value="yes" />
+      <param name="language" value="en-US" />
+      <param name="showVizHome" value="no" />
+      <param name="scrollbars" value="no" />
+    </object>
+  </div>
+<script>
+    var divElement = document.getElementById('viz1750525153359');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    
+    vizElement.style.width = '100%';
+    vizElement.style.height = '700px';
+    
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+<h3 id="why-i-rebuilt-this-dashboard">Why I (Re)built This Dashboard</h3>
+<ul>
+  <li><strong>Any voter can vote at any polling polling place</strong><br />
+Most of Arizona’s 15 Counties, (including its most-populous, Maricopa) use a Vote Center model that lets voters cast ballots at any site in their county of residence, without regard to precinct boundaries.</li>
+  <li><strong>Precinct-distance from Vote Center falls short</strong><br />
+ The previous way Vote Centers were prioritized was by assigning ALL of a precinct’s voters to the closest votecenter based on that precinct’s centroid point. This left some polling places overserved and others ignored.</li>
+  <li><strong>True “nearest” mapping</strong><br />
+We needed a way to see which vote centers served the most voters, based on where they actually live, rather than their precinct residence.</li>
+</ul>
+
+<h3 id="voronoi-based-service-areas">Voronoi-Based Service Areas</h3>
+<p>By generating Voronoi polygons around all 256 vote-center points and then spatially joining the latitude and longitude of 2 million voters by address, we quickly assign each voter to their true nearest site (without running 2 million × 256 distance checks)</p>
+
+<h3 id="exploring-the-map">Exploring the Map</h3>
+
+<h4 id="most-populous-precinct---roser-precinct">Most Populous Precinct - Roser Precinct</h4>
+<p><em>To fit within Tableau Public’s mark‐count limit, each point on the map represents ~20 voters.</em><br />
+Take the most populous precinct in the county, Roser Precinct. In the previous model, all of its voters would have been assigned to the <em>Church of Latter Day Saints</em>. But as you can see, voters in Roser precinct are split pretty significantly among three nearby vote centers, none of which lie within the precinct itself.</p>
+
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/posts/vc-voronoi/roser-precinct.png" alt="Roser Precinct voter distribution" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Roser Precinct</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/posts/vc-voronoi/roser-split.png" alt="Roser precinct split across vote centers" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Roser Precinct’s Closest Vote Centers split</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/posts/vc-voronoi/roser-split-bar.png" alt="Bar chart showing voter distribution" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Extent of voter split between Vote Centers</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<!-- #### Most Populous Vote Center - Academies at South Mountain
+*The Academies at South Mountain* center serves nearly five times more voters than the population of the largest single precinct. But a centroid‐based method could leave it with zero assigned precincts (if no centroid falls closest) or bundle entire precincts arbitrarily, obscuring the true spread of voters it actually serves.
+![academies-sm.png](/assets/images/posts/vc-voronoi/academies-sm.png)   -->
+<h4>Most Populous Vote Center - Academies at South Mountain</h4>
+<div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center; margin: 2rem 0;">
+  <div>
+    <img src="/assets/images/posts/vc-voronoi/academies-sm.png" alt="Academies at South Mountain" style="width: 100%; height: auto;" />
+  </div>
+  <div>
+    <p><em>The Academies at South Mountain</em> center serves nearly five times more voters than the population of the largest single precinct. But a centroid‐based method could leave it with zero assigned precincts (if no centroid falls closest) or bundle entire precincts arbitrarily, obscuring the true spread of voters it actually serves.</p>
+  </div>
+</div>
+
+<!-- Add additional screenshots here as needed -->
+
+<h3 id="impact--takeaways">Impact &amp; Takeaways</h3>
+<ul>
+  <li><strong>Resource reallocation</strong><br />
+Instead of funneling volunteers and legal teams based on precinct proximity, the VoPro team can now focus on the centers actually serving the most people. And by assigning each voter to a Vote Center, we can prioritize the demographic groups we are targeting or serving certain volunteers with language skills to the appropriate places.</li>
+  <li><strong>Faster, cheaper, scalable</strong><br />
+a voronoi spatial join to the lat/longs of only the voters that live within that shape beats millions of distance queries or expensive API calls.</li>
+</ul>
+
+<hr />
+
+<h2 id="details--methodology">Details &amp; Methodology</h2>
+
+<ul>
+  <li><strong>Data workaround</strong><br />
+Because the Arizona voter file is not publicly availalbe, this tableau dashboard demonstration uses a parcel point workaround: Maricopa County parcel points were randomly labeled Democrat or Republican based on each precinct’s 2024 vote share. Parcel points are from <a href="https://data-maricopa.opendata.arcgis.com/datasets/dbf139379db946e1b10a2f15672c142d/about">Maricopa GIS Open Data</a>, and the precinct-level results come from the <a href="https://github.com/nytimes/presidential-precinct-map-2024">NYT 2024 GitHub repository</a>.</li>
+</ul>
+
+<hr />]]></content><author><name>Forrest Williams</name><email>samuel.forrest.williams@gmail.com</email></author><category term="dashboards" /><category term="python" /><category term="geopandas" /><category term="QGIS" /><category term="tableau" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Abundance NY City Council Endorsements</title><link href="http://localhost:4000/maps/2025/06/27/abundance-endorsements.html" rel="alternate" type="text/html" title="Abundance NY City Council Endorsements" /><published>2025-06-27T00:00:00-04:00</published><updated>2025-06-27T00:00:00-04:00</updated><id>http://localhost:4000/maps/2025/06/27/abundance-endorsements</id><content type="html" xml:base="http://localhost:4000/maps/2025/06/27/abundance-endorsements.html"><![CDATA[<style>
 .page__content {
   font-size: 0.9rem;
 }
