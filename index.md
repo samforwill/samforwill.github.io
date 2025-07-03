@@ -239,7 +239,7 @@ feature_row:
     var divElement = document.getElementById('viz1750525153359');
     var vizElement = divElement.getElementsByTagName('object')[0];
     
-    vizElement.style.width = '110%';
+    vizElement.style.width = '100%';
     vizElement.style.height = '850px';
     
     var scriptElement = document.createElement('script');
