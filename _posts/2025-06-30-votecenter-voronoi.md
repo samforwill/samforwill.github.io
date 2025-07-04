@@ -12,11 +12,11 @@ classes: wide
 
 roser:
   - image_path: /assets/images/posts/vc-voronoi/roser-precinct.png
-    alt: "Roser Precinct voter distribution"
-    excerpt: "Roser Precinct"
+    alt: "Roeser Precinct voter distribution"
+    excerpt: "Roeser Precinct"
   - image_path: /assets/images/posts/vc-voronoi/roser-split.png
-    alt: "Roser precinct split across vote centers"
-    excerpt: "Roser Precinct's Closest Vote Centers split"
+    alt: "Roeser precinct split across vote centers"
+    excerpt: "Roeser Precinct's Closest Vote Centers split"
   - image_path: /assets/images/posts/vc-voronoi/roser-split-bar.png
     alt: "Bar chart showing voter distribution"
     excerpt: "Extent of voter split between Vote Centers"
@@ -80,9 +80,9 @@ By generating Voronoi polygons around all 256 vote-center points and then spatia
 
 ### Exploring the Map
 
-#### Most Populous Precinct - Roser Precinct
+#### Most Populous Precinct - Roeser Precinct
 *To fit within Tableau Public’s mark‐count limit, each point on the map represents ~20 voters.*  
-Take the most populous precinct in the county, Roser Precinct. In the previous model, all of its voters would have been assigned to the *Church of Latter Day Saints*. But as you can see, voters in Roser precinct are split pretty significantly among three nearby vote centers, none of which lie within the precinct itself.
+Take the most populous precinct in the county, Roeser Precinct. In the previous model, all of its voters would have been assigned to the *Church of Latter Day Saints*. But as you can see, voters in Roeser precinct are split pretty significantly among three nearby vote centers, none of which lie within the precinct itself.
 {% include feature_row id="roser"%}
 
 
