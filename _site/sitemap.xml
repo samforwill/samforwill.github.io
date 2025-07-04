@@ -2,18 +2,18 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/about/</loc>
-<lastmod>2025-07-03T18:49:54-04:00</lastmod>
+<lastmod>2025-07-03T23:43:45-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/projects/</loc>
-<lastmod>2025-07-03T18:49:54-04:00</lastmod>
+<lastmod>2025-07-03T23:43:45-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/maps/2025/06/27/abundance-endorsements.html</loc>
+<loc>http://localhost:4000/2025/06/27/abundance-endorsements.html</loc>
 <lastmod>2025-06-27T00:00:00-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/dashboards/2025/06/30/votecenter-voronoi.html</loc>
+<loc>http://localhost:4000/2025/06/30/votecenter-voronoi.html</loc>
 <lastmod>2025-06-30T00:00:00-04:00</lastmod>
 </url>
 <url>
@@ -35,12 +35,8 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/assets/Resume%20-%20Forrest%20Wililams.pdf</loc>
+<loc>http://localhost:4000/assets/Resume-Forrest-Williams.pdf</loc>
 <lastmod>2025-07-03T18:48:40-04:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/assets/dResume%20-%20Forrest%20Williams.pdf</loc>
-<lastmod>2025-06-02T11:58:40-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/plots/interactive/Candidate_Tweet_Percentages.html</loc>

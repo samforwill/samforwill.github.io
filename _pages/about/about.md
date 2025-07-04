@@ -19,7 +19,7 @@ sidebar:
 ---
 
 <div style="text-align: center; margin-bottom: 2em;">
-  <a href="/assets/Resume - Forrest Williams.pdf" class="btn btn--primary btn--large" target="_blank">
+  <a href="/assets/Resume-Forrest-Williams.pdf" class="btn btn--primary btn--large" target="_blank">
     <i class="fas fa-download"></i> Download Resume (PDF)
   </a>
 </div>

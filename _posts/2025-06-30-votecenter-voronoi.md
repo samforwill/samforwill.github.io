@@ -2,8 +2,8 @@
 layout: single
 title: "Voronoi-Based Voter Assignment"
 date: 2025-06-30
-categories: [dashboards]
-tags: [python, geopandas, QGIS, tableau]
+# categories: [dashboards]
+# tags: [python, geopandas, QGIS, tableau]
 author_profile: true
 classes: wide
 # toc: true

@@ -2,8 +2,8 @@
 layout: single
 title: "Abundance NY City Council Endorsements"
 date: 2025-06-27
-categories: [maps]
-tags: [python, geopandas, datawrapper]
+# categories: [maps]
+# tags: [python, geopandas, datawrapper]
 author_profile: true
 classes: wide
 # toc: true
