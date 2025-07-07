@@ -104,6 +104,22 @@ feature_row:
   Recent Posts
 </h1>
 
+<!-- Video Section - Add this above your existing map section -->
+<div style="margin-bottom: 2rem;">
+  <h3>[Hex] Vote Locations & Voter Universe Dashboard – Apache, Navajo, and Pima Counties</h3>
+  <p>This dashboard powered the VoPro Team's polling site and dropbox strategy across three key Arizona counties with significant Tribal populations. It was used to urge county Boards of Supervisors to expand polling locations ahead of the Early Vote Deadline to have all locations finalized.</p>
+  
+  <iframe src="https://drive.google.com/file/d/1iJbMXwiCD4wRsSvMrOAAl_7e2twkfgmK/preview" 
+          width="100%" 
+          height="480" 
+          style="max-width: 800px; border: none; box-shadow: 0 6px 20px rgba(0,0,0,0.25);"
+          allow="autoplay">
+  </iframe>
+</div>
+
+<!-- Dividing Line-->
+<hr style="margin: 1.5rem 0; border: 0; height: 2px; background: #d1d5da;">
+
 <!-- 1) DATAWRAPPER MAP – Plot | Text -->
 <div style="display: grid; grid-template-columns: 35% 65%; gap: 1.5rem; margin-bottom: 2rem;">
   <!-- Left: Datawrapper -->
