@@ -35,6 +35,18 @@ Creator of data-driven strategies to tackle complex challenges. Building tools t
 ## Experience
 
 ### Deputy Data Director
+**Virginia Democratic Coordinated Campaign** | Richmond, VA | *June 2025 - November 2025*
+**Field Infrastructure:** Built GOTV Progress to Goal (PTG) from scratch to track canvassing across 10,800 turfs; developed
+reporting systems for Distributed and Out-of-Commonwealth field programs.
+**Turf Restructuring:** Rebuilt statewide turf assignments from fragmented precincts into contiguous geographic units, correcting
+boundary errors and balancing target distribution; developed Streamlit App allowing organizers to map turfs and download
+data as CSVs. (Streamlit App - VA Turf Map)
+**API Automations Development:** Created Python automations with VAN API to close shifts, refresh turfs, and automate Google
+form responses for applying activist codes and survey question responses, and shifting volunteers into events.
+**Language Targeting:** Analyzed ACS data to identify low-English proficiency precincts for Spanish phone banks; used L2 voter file
+data aggregated at census block level to target literature distribution in Spanish, Korean, Arabic, Vietnamese, and Mandarin.
+
+### Deputy Data Director
 **Harris for President - Coordinated Campaign** | Phoenix, AZ | *May 2024 - November 2024*
 
 **Analytics:** Built detailed reports, visualizations, and dashboards on historical voting trends, turnout patterns, and county vote tally cadences that updated in real time. Conducted precinct performance and outstanding ballot analysis to guide targeted canvassing and ballot cure efforts during and after election.

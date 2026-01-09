@@ -31,7 +31,7 @@ intro:
       Hi, I'm Forrest, a Data Analyst based in Queens, NY.  
   
   
-      I started my career in non-profit immigrant advocacy, then after several years with the Census Bureau, my path led me to Arizona where I was Deputy Data Director for the AZ Democrats/Harris for President campaign. I put this site together to show off some of my projects, tools, and skills I've learned along the way.  (And I'll probably post some personal tidbits, like my half year in Uruguay and Cuba following the 2024 cycle.)   
+      I started my career in non-profit immigrant advocacy, then after several years with the Census Bureau, my path led me to Arizona where I was Deputy Data Director for the AZ Democrats/Harris for President campaign, and then to Richmond as Deputy Data Director for the Virginia Democrats/Abigail Spanberger. I put this site together to show off some of my projects, tools, and skills I've learned along the way.  (And I'll probably post some personal tidbits, like my half year in Uruguay and Cuba following the 2024 cycle.)   
   
 
       Scroll down to see some (mostly) interactive snippets of my work. And click through any project to explore the data, code, and process behind it.
