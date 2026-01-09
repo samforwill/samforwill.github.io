@@ -227,7 +227,7 @@ feature_row:
   <a href="https://samforwill.github.io/2025/06/30/votecenter-voronoi.html" class="btn btn--info btn--large">Visit Full Post</a>
   </div>
   
-  <div class='tableauPlaceholder' id='viz1750525153359' style='position: relative; width: 100%; height: 700px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.25);'>
+  <!-- <div class='tableauPlaceholder' id='viz1750525153359' style='position: relative; width: 100%; height: 700px; overflow: hidden; box-shadow: 0 6px 20px rgba(0,0,0,0.25);'>
     <noscript>
       <a href='#'>
         <img alt='Dashboard 1' src='https://public.tableau.com/static/images/Ma/MaricopaCountyPrecinctv_VoteCenterAggregation/Dashboard1_rss.png' style='border: none; width:100%;' />
@@ -266,4 +266,4 @@ feature_row:
 
 
 
-
+ -->
