@@ -46,7 +46,7 @@ Creator of data-driven strategies to tackle complex challenges. Building tools t
 **Language Targeting:** Analyzed ACS data to identify low-English proficiency precincts for Spanish phone banks; used L2 voter file data aggregated at census block level to target literature distribution in Spanish, Korean, Arabic, Vietnamese, and Mandarin.
 
 ### Deputy Data Director
-**Harris for President - Coordinated Campaign** | Phoenix, AZ | *May 2024 - November 2024*
+**Arizona Democratic Coordinated Campaign** | Phoenix, AZ | *May 2024 - November 2024*
 
 **Analytics:** Built detailed reports, visualizations, and dashboards on historical voting trends, turnout patterns, and county vote tally cadences that updated in real time. Conducted precinct performance and outstanding ballot analysis to guide targeted canvassing and ballot cure efforts during and after election.
 
